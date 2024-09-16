@@ -23,7 +23,7 @@ def get_all_possible_place_types():
 
 # Function to get places within a radius from a given lat/lng for multiple place types
 def get_places_nearby_multiple_types(lat, lng, radius=1609, place_types=None):
-    API_KEY = API_KEY
+    API_KEY = st.secrets["API_KEY"]
     endpoint_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     all_places = []
 
